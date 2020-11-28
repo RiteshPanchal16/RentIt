@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% endblock title %}
+
+{% block body%}
+<style>
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+  margin-top: 25px;
+  width: 50%;
+  
+}
+</style>
+<div class="container">
+<form method="post" action="/container">
+{% csrf_token %}
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" name='name' placeholder="Enter Your Name" required> 
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" name='email' placeholder="Enter Your Email" required>
+  </div>
+  <div class="form-group">
+    <label for="phone">Contact No.</label>
+    <input type="text" class="form-control" id="phone" name='phone' placeholder="Enter Your Contact No." required>
+  </div>
+  
+  <div class="form-group">
+    <label for="text_area">Example textarea</label>
+    <textarea type="text" class="form-control" id="text_area" name="text_area" rows="3" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlFile1">Upload Your Photo</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock body%}
+
