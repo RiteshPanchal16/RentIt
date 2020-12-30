@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% endblock title %}
+
+{% block body%}
+<style>
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+  margin-top: 25px;
+  width: 50%;
+  
+}
+
+element.style {
+}
+.form-control{
+  margin-top:15px;
+  border-radius: 20px;
+  border:1px solid rgb(58, 61, 238);
+}
+.container1{
+width: 430px;
+margin-top: 70px;
+
+border-radius: 10px;
+padding:10px;
+background-color: rgb(255, 255, 255);
+
+}
+body{
+  {% comment %} {% load static %}
+  background-image: url("{% static '/background/lavender_pink_wave_swirl_hd_abstract.jpg' %}"); {% endcomment %}
+
+}
+.btn{
+  border-radius: 20px;
+}
+#heading{
+  color: rgb(7, 32, 144);
+}img\background\lavender_pink_wave_swirl_hd_abstract.jpg
+</style>
+<center>
+<div class="container1" >
+  <h2 id="heading">Welcome!</h2>
+
+<form>
+ 
+  <div class="form-group">
+    
+    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+  </div>
+
+
+  <div class="form-group">
+    
+    <input type="password" class="form-control" id="inputPassword4" placeholder="password">
+  </div>
+  <button type="submit" class="btn btn-primary">Login</button>
+  
+</form>
+</div></center>
+{% endblock body%}
+

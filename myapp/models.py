@@ -6,7 +6,7 @@ class Contact(models.Model):
     email=models.CharField(max_length = 100)
     phone=models.CharField(max_length = 100)
     text_area=models.TextField()
-    # image=models.ImageField()
+    image=models.ImageField(default='')
     
     def __str__(self):
         return self.name

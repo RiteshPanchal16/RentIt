@@ -16,6 +16,12 @@ def Services(request):
 
 def properties(request):
     return render(request,"property.html")
+    
+def Login(request):
+    return render(request,"Login.html")
+
+def SignUp(request):
+    return render(request,"SignUp.html")
 
 def container(request):
     if request.method=='POST':

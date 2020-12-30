@@ -42,10 +42,10 @@
             </li>
             
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="/Login">Login</a></a></button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="/SignUp">SignUp</a></button>
+          
         </div>
       </nav>
 
@@ -63,7 +63,16 @@
 {% block body %} {% endblock body %}
 <style>
 footer{
-  float:bottom;
+  position:absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   /* background-color: red; */
+   color: white;
+   text-align: center;
+}
+.btn{
+  margin:2px;
 }
 </style>
 <footer class="footer mt-auto py-3">

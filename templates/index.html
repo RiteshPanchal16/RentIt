@@ -13,9 +13,26 @@
     .container{
         margin-top: 20px;
     }
+    
     img{
       width: 100%;
+      height:180px;
     }
+    .col-md-4{
+      max-width: 25%;
+      
+    }
+    .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    float: right;
+    height: 80px;
+    width: 80;
+    border-radius: 50%;
+    text-align: center;
+    position:sticky;
+}
 </style>
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -26,7 +43,7 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       {% load static %}
-            <img src="{% static '/photo-1568516475890-93001959ccd4.jpg' %}" alt="My image" width=1200 height=400>
+            <img src="{% static '/photo-1568516475890-93001959ccd4.jpg' %}" alt="My image" width=1200 height=350  >
 
       <div class="carousel-caption d-none d-md-block">
         <h5>Rent Your Things Here</h5>
@@ -35,7 +52,7 @@
     </div>
     <div class="carousel-item">
       {% load static %}
-            <img src="{% static '/photo-1590275113050-ca917488933a.jpg' %}" alt="My image" width=1200 height=400>
+            <img src="{% static '/photo-1590275113050-ca917488933a.jpg' %}" alt="My image" width=1200 height=350  >
 
       <div class="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
@@ -44,7 +61,8 @@
     </div>
     <div class="carousel-item">
     {% load static %}
-    <img src="{%  static '/photo-1464454709131-ffd692591ee5.jpg'%}" alt="nfkjsj">
+            <img src="{% static '/photo-1464454709131-ffd692591ee5.jpg' %}" alt="My image" width=1200 height=350  >
+    
       
      <div " class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
@@ -72,7 +90,7 @@
             <img src="{% static '/half.jpg' %}" alt="My image">
           
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">This is a wider card with supporting text below as a natural l</p>
             <div class="d-flex justify-content-between align-items-center">
             </div>
           </div>
@@ -84,7 +102,19 @@
             {% load static %}
             <img src="{% static '/just.jpg' %}" alt="My image">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">This is a wider card with supporting text below as a natural .</p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            {% load static %}
+            <img src="{% static '/just.jpg' %}" alt="My image">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural .</p>
               <div class="d-flex justify-content-between align-items-center">
               </div>
             </div>
@@ -96,13 +126,15 @@
                 {% load static %}
             <img src="{% static '/photo-1590275113050-ca917488933a.jpg' %}" alt="My image">
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">This is a wider card with supporting text below as a natural .</p>
                 <div class="d-flex justify-content-between align-items-center">
                 </div>
               </div>
             </div>
           </div>
         </div>
-      
-{% endblock body%}
+        
 
+      
+        <button type="button" class="btn btn-primary">Primary</button>
+{% endblock body%}
